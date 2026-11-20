@@ -1,0 +1,13 @@
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('create-post/', views.create_post, name='create_post'),
+]
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('create-post/', views.create_post, name='create_post'),
+    path('posts/', views.post_list, name='post_list'),
+]
